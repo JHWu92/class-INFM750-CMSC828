@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (19081 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="78431237" visible="true" version="4" changeset="31863876" timestamp="2015-06-10T08:35:06Z" user="LeedsTracker" uid="2330">
+  <nd ref="920424012"/>
+  <nd ref="920423989"/>
+  <nd ref="920423991"/>
+  <nd ref="920423992"/>
+  <nd ref="1414381458"/>
+  <nd ref="1893068859"/>
+  <nd ref="920423994"/>
+  <nd ref="920423996"/>
+  <nd ref="920423997"/>
+  <nd ref="3585325181"/>
+  <nd ref="920423998"/>
+  <nd ref="920423999"/>
+  <nd ref="1414381461"/>
+  <nd ref="1414381463"/>
+  <nd ref="920424000"/>
+  <nd ref="920424001"/>
+  <nd ref="920424002"/>
+  <nd ref="920424003"/>
+  <nd ref="1414381467"/>
+  <nd ref="1414381468"/>
+  <nd ref="920424004"/>
+  <nd ref="920424005"/>
+  <nd ref="920424007"/>
+  <nd ref="920424009"/>
+  <nd ref="920424011"/>
+  <nd ref="920424012"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Royal Armouries"/>
+  <tag k="source" v="OS OpenData StreetView"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="wheelchair" v="yes"/>
+ </way>
+</osm>

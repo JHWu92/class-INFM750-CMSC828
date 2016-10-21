@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (19385 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="27765411" visible="true" version="13" changeset="41518296" timestamp="2016-08-17T18:22:03Z" user="belgonan" uid="4434420">
+  <nd ref="32052016"/>
+  <nd ref="304884794"/>
+  <nd ref="304884795"/>
+  <nd ref="304884793"/>
+  <nd ref="1141096745"/>
+  <nd ref="1141096779"/>
+  <nd ref="1141096812"/>
+  <nd ref="1141096696"/>
+  <nd ref="304884796"/>
+  <nd ref="304884797"/>
+  <nd ref="1141096729"/>
+  <nd ref="1141096772"/>
+  <nd ref="1141096806"/>
+  <nd ref="1141096720"/>
+  <nd ref="304884798"/>
+  <nd ref="32052017"/>
+  <nd ref="1347057739"/>
+  <nd ref="1347057733"/>
+  <nd ref="32052016"/>
+  <tag k="amenity" v="public_building"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Science Museum"/>
+  <tag k="name:de" v="Wissenschaftsmuseum"/>
+  <tag k="name:en" v="Science Museum"/>
+  <tag k="name:es" v="Museo de Ciencias"/>
+  <tag k="name:fr" v="Musée de la science"/>
+  <tag k="name:he" v="מוזיאון המדע"/>
+  <tag k="name:it" v="Museo della scienza"/>
+  <tag k="name:uk" v="Музей науки"/>
+  <tag k="opening_hours" v="Mo-Su 10:00-18:00"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="website" v="http://www.sciencemuseum.org.uk/"/>
+  <tag k="wheelchair" v="limited"/>
+  <tag k="wikipedia" v="en:Science Museum (London)"/>
+ </way>
+</osm>

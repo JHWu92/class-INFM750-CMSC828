@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (7690 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="4372002" visible="true" version="27" changeset="42521310" timestamp="2016-09-29T14:52:58Z" user="MissiChen" uid="4111680">
+  <nd ref="1835289528"/>
+  <nd ref="1835289527"/>
+  <nd ref="1637789597"/>
+  <nd ref="1637789594"/>
+  <nd ref="1637789595"/>
+  <nd ref="1637789593"/>
+  <nd ref="1637789596"/>
+  <nd ref="1637789592"/>
+  <nd ref="26631003"/>
+  <nd ref="26631004"/>
+  <nd ref="1637789582"/>
+  <nd ref="1637789585"/>
+  <nd ref="1637789581"/>
+  <nd ref="1637789580"/>
+  <nd ref="1637789574"/>
+  <nd ref="1637789575"/>
+  <nd ref="1637789573"/>
+  <nd ref="1637789571"/>
+  <nd ref="1637789576"/>
+  <nd ref="1637789569"/>
+  <nd ref="1637789518"/>
+  <nd ref="1637789486"/>
+  <nd ref="1637789499"/>
+  <nd ref="1637789502"/>
+  <nd ref="1637789525"/>
+  <nd ref="1637789528"/>
+  <nd ref="1637789557"/>
+  <nd ref="1637789562"/>
+  <nd ref="1637789551"/>
+  <nd ref="1637789549"/>
+  <nd ref="1637789529"/>
+  <nd ref="1637789534"/>
+  <nd ref="1637789526"/>
+  <nd ref="1637789530"/>
+  <nd ref="1637789532"/>
+  <nd ref="1637789539"/>
+  <nd ref="1637789531"/>
+  <nd ref="1637789533"/>
+  <nd ref="1637789536"/>
+  <nd ref="1637789540"/>
+  <nd ref="1637789541"/>
+  <nd ref="1637789544"/>
+  <nd ref="1637789546"/>
+  <nd ref="1637789542"/>
+  <nd ref="345859447"/>
+  <nd ref="345859448"/>
+  <nd ref="733691162"/>
+  <nd ref="345859449"/>
+  <nd ref="345859450"/>
+  <nd ref="1637789550"/>
+  <nd ref="1637789552"/>
+  <nd ref="1637789555"/>
+  <nd ref="1637789559"/>
+  <nd ref="1637789554"/>
+  <nd ref="1637789556"/>
+  <nd ref="1637789558"/>
+  <nd ref="1637789561"/>
+  <nd ref="1637789563"/>
+  <nd ref="1637789566"/>
+  <nd ref="1637789565"/>
+  <nd ref="1637789567"/>
+  <nd ref="733691174"/>
+  <nd ref="1637789572"/>
+  <nd ref="1835289528"/>
+  <tag k="addr:city" v="London"/>
+  <tag k="building" v="gallery"/>
+  <tag k="name" v="National Gallery"/>
+  <tag k="name:de" v="Nationalgalerie"/>
+  <tag k="name:en" v="National Gallery"/>
+  <tag k="name:es" v="Galería Nacional."/>
+  <tag k="name:gl" v="Galería Nacional"/>
+  <tag k="name:ru" v="Национальная галерея"/>
+  <tag k="name:uk" v="Національна галерея"/>
+  <tag k="name:zh" v="國家美術館"/>
+  <tag k="opening_hours" v="Sa-Th 10:00-18:00; Fr 10:00-21:00"/>
+  <tag k="postal_code" v="WC2N 5DN"/>
+  <tag k="source" v="Bing"/>
+  <tag k="toilets:wheelchair" v="yes"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="website" v="http://www.nationalgallery.org.uk"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q180788"/>
+  <tag k="wikipedia" v="en:National Gallery"/>
+ </way>
+</osm>

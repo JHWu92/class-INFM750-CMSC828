@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (18024 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="235295482" visible="true" version="4" changeset="24110368" timestamp="2014-07-12T23:13:04Z" user="uk_jay" uid="599652">
+  <nd ref="2433772560"/>
+  <nd ref="2433772564"/>
+  <nd ref="2433772599"/>
+  <nd ref="2433772575"/>
+  <nd ref="2433772573"/>
+  <nd ref="2433772591"/>
+  <nd ref="2433772593"/>
+  <nd ref="2960403164"/>
+  <nd ref="2433772584"/>
+  <nd ref="2433772581"/>
+  <nd ref="2960403165"/>
+  <nd ref="2960403144"/>
+  <nd ref="2433772578"/>
+  <nd ref="2433772562"/>
+  <nd ref="2433772570"/>
+  <nd ref="2433772567"/>
+  <nd ref="2960403166"/>
+  <nd ref="2433772589"/>
+  <nd ref="2433772586"/>
+  <nd ref="2433772557"/>
+  <nd ref="2433772560"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="The Tate: St Ives"/>
+ </way>
+</osm>

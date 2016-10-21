@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (11846 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="24553580" visible="true" version="19" changeset="41207287" timestamp="2016-08-03T05:58:33Z" user="BCNorwich" uid="322785">
+  <nd ref="266974928"/>
+  <nd ref="1278796243"/>
+  <nd ref="1278796131"/>
+  <nd ref="1278796087"/>
+  <nd ref="1278796064"/>
+  <nd ref="266974929"/>
+  <nd ref="266974930"/>
+  <nd ref="266974931"/>
+  <nd ref="266974932"/>
+  <nd ref="266974933"/>
+  <nd ref="266974934"/>
+  <nd ref="266974935"/>
+  <nd ref="266974936"/>
+  <nd ref="266974937"/>
+  <nd ref="1278796175"/>
+  <nd ref="266974938"/>
+  <nd ref="1334631052"/>
+  <nd ref="1334631138"/>
+  <nd ref="1278796109"/>
+  <nd ref="1334630889"/>
+  <nd ref="1334630942"/>
+  <nd ref="1334631172"/>
+  <nd ref="1334631021"/>
+  <nd ref="1334631255"/>
+  <nd ref="266974940"/>
+  <nd ref="266974941"/>
+  <nd ref="1334631308"/>
+  <nd ref="1334630995"/>
+  <nd ref="670126092"/>
+  <nd ref="266974928"/>
+  <tag k="addr:city" v="London"/>
+  <tag k="addr:country" v="GB"/>
+  <tag k="addr:postcode" v="SW1P 4RG"/>
+  <tag k="addr:street" v="Millbank"/>
+  <tag k="building" v="yes"/>
+  <tag k="media:commons" v="https://commons.wikimedia.org/wiki/Category:Tate_Britain_%28building%29"/>
+  <tag k="name" v="Tate Britain"/>
+  <tag k="name:ar" v="تيت"/>
+  <tag k="name:en" v="Tate Britain"/>
+  <tag k="name:es" v="Tate Britain."/>
+  <tag k="name:uk" v="Тейт Британія"/>
+  <tag k="opening_hours" v="Mo-Su 10:00-18:00"/>
+  <tag k="phone" v="+44 2078 878888"/>
+  <tag k="tourism" v="gallery"/>
+  <tag k="website" v="http://www.tate.org.uk/visit/tate-britain"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q195436"/>
+  <tag k="wikipedia" v="en:Tate Britain"/>
+ </way>
+</osm>

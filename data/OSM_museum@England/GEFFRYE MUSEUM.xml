@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (13739 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="107807460" visible="true" version="2" changeset="7978557" timestamp="2011-04-26T19:27:58Z" user="mattblack82" uid="190095">
+  <nd ref="1238338534"/>
+  <nd ref="1238338535"/>
+  <nd ref="1238338536"/>
+  <nd ref="1238338537"/>
+  <nd ref="1238338538"/>
+  <nd ref="1238338539"/>
+  <nd ref="1238338540"/>
+  <nd ref="1238338541"/>
+  <nd ref="1238338542"/>
+  <nd ref="1238338543"/>
+  <nd ref="1238338544"/>
+  <nd ref="648861116"/>
+  <nd ref="1238338493"/>
+  <nd ref="648861117"/>
+  <nd ref="648861118"/>
+  <nd ref="1238338466"/>
+  <nd ref="1238338465"/>
+  <nd ref="648861119"/>
+  <nd ref="1238338464"/>
+  <nd ref="1238338531"/>
+  <nd ref="1238338545"/>
+  <nd ref="1238338534"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Geffrye Museum"/>
+  <tag k="source" v="Bing"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="wikipedia" v="en:Geffrye Museum"/>
+ </way>
+</osm>

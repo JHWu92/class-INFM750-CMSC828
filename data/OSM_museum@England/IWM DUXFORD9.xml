@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (8285 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="22001423" visible="true" version="4" changeset="31924625" timestamp="2015-06-12T15:52:25Z" user="Matthew Law" uid="1952553">
+  <nd ref="237042714"/>
+  <nd ref="3590271868"/>
+  <nd ref="3590271869"/>
+  <nd ref="3590271871"/>
+  <nd ref="3590271870"/>
+  <nd ref="237042728"/>
+  <nd ref="237042732"/>
+  <nd ref="237042720"/>
+  <nd ref="237042714"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Imperial War Museum Duxford Land Warfare Hall"/>
+  <tag k="tourism" v="museum"/>
+ </way>
+</osm>

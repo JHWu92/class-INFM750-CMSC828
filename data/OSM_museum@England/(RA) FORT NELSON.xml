@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (24600 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="22927416" visible="true" version="11" changeset="32181509" timestamp="2015-06-24T12:38:42Z" user="Deanna Earley" uid="2231">
+  <nd ref="2709214873"/>
+  <nd ref="3615121610"/>
+  <nd ref="246885910"/>
+  <nd ref="3614959356"/>
+  <nd ref="246885919"/>
+  <nd ref="3614959357"/>
+  <nd ref="246885918"/>
+  <nd ref="3614959370"/>
+  <nd ref="3614959383"/>
+  <nd ref="2468867038"/>
+  <nd ref="246885917"/>
+  <nd ref="3614959388"/>
+  <nd ref="2468867053"/>
+  <nd ref="2468867088"/>
+  <nd ref="3614959385"/>
+  <nd ref="3614959378"/>
+  <nd ref="246885916"/>
+  <nd ref="2468867047"/>
+  <nd ref="246885915"/>
+  <nd ref="3614959373"/>
+  <nd ref="246885914"/>
+  <nd ref="3615121612"/>
+  <nd ref="3614959348"/>
+  <nd ref="3615092866"/>
+  <nd ref="3614959351"/>
+  <nd ref="246885913"/>
+  <nd ref="2468867046"/>
+  <nd ref="3614959342"/>
+  <nd ref="246885912"/>
+  <nd ref="2468867044"/>
+  <nd ref="246885911"/>
+  <nd ref="3614959345"/>
+  <nd ref="2709214868"/>
+  <nd ref="2709214873"/>
+  <tag k="addr:city" v="Fareham"/>
+  <tag k="addr:housename" v="Royal Armouries Museum"/>
+  <tag k="addr:postcode" v="PO17 6AN"/>
+  <tag k="addr:street" v="Portsdown Hill Road"/>
+  <tag k="alt_name" v="Royal Armouries Museum"/>
+  <tag k="historic" v="fort"/>
+  <tag k="name" v="Fort Nelson"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="website" v="https://www.royalarmouries.org/visit-us/fort-nelson"/>
+ </way>
+</osm>

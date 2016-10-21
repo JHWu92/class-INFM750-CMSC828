@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (24745 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="61453261" visible="true" version="7" changeset="41519651" timestamp="2016-08-17T19:30:23Z" user="belgonan" uid="4434420">
+  <nd ref="767083767"/>
+  <nd ref="767083761"/>
+  <nd ref="767083759"/>
+  <nd ref="767083757"/>
+  <nd ref="767083758"/>
+  <nd ref="767083767"/>
+  <tag k="addr:city" v="London"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="WC2A 3BP"/>
+  <tag k="addr:street" v="Lincoln's Inn Fields"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Sir John Soane's Museum"/>
+  <tag k="opening_hours" v="Tu-Sa 10:00-16:30"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="website" v="http://www.soane.org"/>
+  <tag k="wikipedia" v="en:Sir John Soane's Museum"/>
+ </way>
+</osm>

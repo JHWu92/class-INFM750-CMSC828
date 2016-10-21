@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (8285 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="26521006" visible="true" version="8" changeset="16163360" timestamp="2013-05-17T08:02:58Z" user="Robert Whittaker" uid="84263">
+  <nd ref="290681817"/>
+  <nd ref="1302202216"/>
+  <nd ref="1302202214"/>
+  <nd ref="290681819"/>
+  <nd ref="290681820"/>
+  <nd ref="290681821"/>
+  <nd ref="1833676313"/>
+  <nd ref="290681822"/>
+  <nd ref="290681824"/>
+  <nd ref="290681825"/>
+  <nd ref="2307579976"/>
+  <nd ref="2307579975"/>
+  <nd ref="2307579964"/>
+  <nd ref="2307579965"/>
+  <nd ref="2307579966"/>
+  <nd ref="2307579974"/>
+  <nd ref="2307579969"/>
+  <nd ref="290681826"/>
+  <nd ref="1302169240"/>
+  <nd ref="1302168839"/>
+  <nd ref="290681817"/>
+  <tag k="is_in" v="Duxford"/>
+  <tag k="layer" v="-1"/>
+  <tag k="name" v="Imperial War Museum, Duxford"/>
+  <tag k="note" v="estimated approximate outline, needs refining"/>
+  <tag k="tourism" v="attraction"/>
+ </way>
+</osm>

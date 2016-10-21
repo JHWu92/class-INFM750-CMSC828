@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (27309 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="24538730" visible="true" version="3" changeset="21246983" timestamp="2014-03-22T16:19:21Z" user="rusholme" uid="872282">
+  <nd ref="266819579"/>
+  <nd ref="266819576"/>
+  <nd ref="266819582"/>
+  <nd ref="266819586"/>
+  <nd ref="266819587"/>
+  <nd ref="266819568"/>
+  <nd ref="266819572"/>
+  <nd ref="2734221539"/>
+  <nd ref="2734221538"/>
+  <nd ref="2734221540"/>
+  <nd ref="2734221541"/>
+  <nd ref="2734221543"/>
+  <nd ref="266819574"/>
+  <nd ref="266819570"/>
+  <nd ref="266819598"/>
+  <nd ref="266819597"/>
+  <nd ref="266819584"/>
+  <nd ref="2734221533"/>
+  <nd ref="266819579"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Blythe House"/>
+  <tag k="operator" v="British Museum"/>
+ </way>
+</osm>

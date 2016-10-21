@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (27509 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="48041275" visible="true" version="11" changeset="21687541" timestamp="2014-04-14T15:01:34Z" user="cquest" uid="158826">
+  <nd ref="610812955"/>
+  <nd ref="610812886"/>
+  <nd ref="610812887"/>
+  <nd ref="610812890"/>
+  <nd ref="610812891"/>
+  <nd ref="610812892"/>
+  <nd ref="610812898"/>
+  <nd ref="610812899"/>
+  <nd ref="610812900"/>
+  <nd ref="610812901"/>
+  <nd ref="610812902"/>
+  <nd ref="610812903"/>
+  <nd ref="610812904"/>
+  <nd ref="610812905"/>
+  <nd ref="610812906"/>
+  <nd ref="610812907"/>
+  <nd ref="610812908"/>
+  <nd ref="610812909"/>
+  <nd ref="610812910"/>
+  <nd ref="610812913"/>
+  <nd ref="610812914"/>
+  <nd ref="610812915"/>
+  <nd ref="610812916"/>
+  <nd ref="610812918"/>
+  <nd ref="610812919"/>
+  <nd ref="610812921"/>
+  <nd ref="610812924"/>
+  <nd ref="610812925"/>
+  <nd ref="610812926"/>
+  <nd ref="610812927"/>
+  <nd ref="610812928"/>
+  <nd ref="610812930"/>
+  <nd ref="610812931"/>
+  <nd ref="610812932"/>
+  <nd ref="610812933"/>
+  <nd ref="610812934"/>
+  <nd ref="610812935"/>
+  <nd ref="610812940"/>
+  <nd ref="610812941"/>
+  <nd ref="610812946"/>
+  <nd ref="610812950"/>
+  <nd ref="610812951"/>
+  <nd ref="610812952"/>
+  <nd ref="610812955"/>
+  <tag k="amenity" v="arts_centre"/>
+  <tag k="building" v="yes"/>
+  <tag k="dcgis:captureyear" v="20080530"/>
+  <tag k="dcgis:dataset" v="buildings"/>
+  <tag k="dcgis:featurecode" v="2000"/>
+  <tag k="dcgis:gis_id" v="90633"/>
+  <tag k="name" v="National Portrait Gallery / Smithsonian American Art Museum"/>
+  <tag k="source" v="dcgis"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="website" v="http://www.npg.si.edu/"/>
+  <tag k="wikipedia" v="en:Archives (WMATA station)"/>
+ </way>
+</osm>

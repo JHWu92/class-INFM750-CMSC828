@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (11847 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="183090507" visible="true" version="6" changeset="39637768" timestamp="2016-05-29T08:53:06Z" user="Cradamy" uid="406589">
+  <nd ref="1934478983"/>
+  <nd ref="416327015"/>
+  <nd ref="416327019"/>
+  <nd ref="27482429"/>
+  <nd ref="4213477735"/>
+  <nd ref="416327025"/>
+  <nd ref="2541381310"/>
+  <nd ref="2541381305"/>
+  <nd ref="2541381270"/>
+  <nd ref="496130429"/>
+  <nd ref="2541381296"/>
+  <nd ref="2541381276"/>
+  <nd ref="2541375251"/>
+  <nd ref="2541375271"/>
+  <nd ref="2541381330"/>
+  <nd ref="2541381286"/>
+  <nd ref="1934478983"/>
+  <tag k="name" v="Royal Museums Greenwich"/>
+  <tag k="tourism" v="museum"/>
+ </way>
+</osm>

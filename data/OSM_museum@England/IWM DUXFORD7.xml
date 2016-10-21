@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (18326 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="115136080" visible="true" version="2" changeset="8264853" timestamp="2011-05-27T17:20:00Z" user="bri g" uid="20163">
+  <nd ref="1302169400"/>
+  <nd ref="1302169245"/>
+  <nd ref="1302168379"/>
+  <nd ref="1302168700"/>
+  <nd ref="1302169400"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Imperial War Museum Duxford 1940 Operations Room"/>
+  <tag k="source" v="Bing"/>
+  <tag k="tourism" v="museum"/>
+ </way>
+</osm>

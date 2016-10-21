@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (8987 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="187293585" visible="true" version="6" changeset="32492768" timestamp="2015-07-08T11:13:21Z" user="Chris Parker" uid="51722">
+  <nd ref="1980111892"/>
+  <nd ref="1980111873"/>
+  <nd ref="1980111883"/>
+  <nd ref="1980111888"/>
+  <nd ref="2901375107"/>
+  <nd ref="1980111870"/>
+  <nd ref="2901375105"/>
+  <nd ref="2901374771"/>
+  <nd ref="1980111900"/>
+  <nd ref="3640694433"/>
+  <nd ref="1980111892"/>
+  <tag k="amenity" v="parking"/>
+  <tag k="fee" v="yes"/>
+  <tag k="name" v="Imperial War Museum North"/>
+  <tag k="parking" v="surface"/>
+ </way>
+</osm>

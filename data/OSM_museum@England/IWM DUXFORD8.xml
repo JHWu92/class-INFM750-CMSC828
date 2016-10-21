@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (24409 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="22001422" visible="true" version="5" changeset="35664797" timestamp="2015-11-30T12:48:48Z" user="generalist" uid="693362">
+  <nd ref="237042685"/>
+  <nd ref="360003287"/>
+  <nd ref="237042693"/>
+  <nd ref="360003288"/>
+  <nd ref="237042691"/>
+  <nd ref="237042696"/>
+  <nd ref="360003289"/>
+  <nd ref="237042695"/>
+  <nd ref="1301969863"/>
+  <nd ref="1301969868"/>
+  <nd ref="1301969869"/>
+  <nd ref="237042710"/>
+  <nd ref="237042707"/>
+  <nd ref="237042717"/>
+  <nd ref="237042685"/>
+  <tag k="building" v="hangar"/>
+  <tag k="name" v="Imperial War Museum Duxford American Air Museum"/>
+  <tag k="tourism" v="museum"/>
+ </way>
+</osm>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (29110 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="10790633" visible="true" version="5" changeset="25291306" timestamp="2014-09-07T17:23:48Z" user="mcld" uid="238584">
+  <nd ref="96006680"/>
+  <nd ref="1213564003"/>
+  <nd ref="96006681"/>
+  <nd ref="96006682"/>
+  <nd ref="96006684"/>
+  <nd ref="3065516800"/>
+  <nd ref="96006680"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="V&amp;A Museum of Childhood"/>
+  <tag k="source" v="Yahoo"/>
+  <tag k="tourism" v="museum"/>
+ </way>
+</osm>

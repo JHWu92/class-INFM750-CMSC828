@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (18326 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="205197227" visible="true" version="15" changeset="39549472" timestamp="2016-05-25T15:45:26Z" user="wheelmap_visitor" uid="290680">
+  <nd ref="306572700"/>
+  <nd ref="306572699"/>
+  <nd ref="306572698"/>
+  <nd ref="306572701"/>
+  <nd ref="2509263497"/>
+  <nd ref="1680256861"/>
+  <nd ref="306573023"/>
+  <nd ref="2509277803"/>
+  <nd ref="306573022"/>
+  <nd ref="984431505"/>
+  <nd ref="984431507"/>
+  <nd ref="984431516"/>
+  <nd ref="2151739271"/>
+  <nd ref="1766133998"/>
+  <nd ref="2151739268"/>
+  <nd ref="306573053"/>
+  <nd ref="306573052"/>
+  <nd ref="3405888644"/>
+  <nd ref="1766133836"/>
+  <nd ref="1766133990"/>
+  <nd ref="306573043"/>
+  <nd ref="306573044"/>
+  <nd ref="1766134375"/>
+  <nd ref="1766133703"/>
+  <nd ref="1766133882"/>
+  <nd ref="1766134417"/>
+  <nd ref="1766133936"/>
+  <nd ref="1766133843"/>
+  <nd ref="306572896"/>
+  <nd ref="306572897"/>
+  <nd ref="1680256796"/>
+  <nd ref="306572700"/>
+  <tag k="addr:city" v="Manchester"/>
+  <tag k="alt_name" v="MOSI"/>
+  <tag k="area" v="yes"/>
+  <tag k="name" v="Museum of Science and Industry in Manchester"/>
+  <tag k="name:he" v="מוזאון המדע והתעשייה"/>
+  <tag k="toilets:wheelchair" v="yes"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="website" v="http://www.mosi.org.uk"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikipedia" v="en:Museum of Science and Industry (Manchester)"/>
+ </way>
+</osm>

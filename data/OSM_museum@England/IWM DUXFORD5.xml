@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (24745 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="22001420" visible="true" version="3" changeset="11339676" timestamp="2012-04-18T02:30:35Z" user="Mauls" uid="24119">
+  <nd ref="237042666"/>
+  <nd ref="237042681"/>
+  <nd ref="237042678"/>
+  <nd ref="237042690"/>
+  <nd ref="237042666"/>
+  <tag k="building" v="hangar"/>
+  <tag k="name" v="Imperial War Museum Duxford (Conservation in Action)"/>
+  <tag k="tourism" v="museum"/>
+ </way>
+</osm>

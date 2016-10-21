@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (17514 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="210442848" visible="true" version="3" changeset="32075770" timestamp="2015-06-19T14:00:35Z" user="MapperIAm" uid="2673535">
+  <nd ref="848505073"/>
+  <nd ref="34776769"/>
+  <nd ref="2205062072"/>
+  <nd ref="2205062077"/>
+  <nd ref="2205062076"/>
+  <nd ref="2205062073"/>
+  <nd ref="2205062071"/>
+  <nd ref="2205062070"/>
+  <nd ref="34776770"/>
+  <nd ref="34776771"/>
+  <nd ref="34776772"/>
+  <nd ref="2205062102"/>
+  <nd ref="2205062103"/>
+  <nd ref="34776773"/>
+  <nd ref="848505067"/>
+  <nd ref="2924625641"/>
+  <nd ref="2205062104"/>
+  <nd ref="2205062105"/>
+  <nd ref="34776774"/>
+  <nd ref="34776775"/>
+  <nd ref="2205062096"/>
+  <nd ref="34776766"/>
+  <nd ref="848505073"/>
+  <tag k="addr:city" v="Forest Hill"/>
+  <tag k="addr:housenumber" v="100"/>
+  <tag k="addr:postcode" v="SE23 3PQ"/>
+  <tag k="addr:street" v="London Road"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Horniman Museum"/>
+  <tag k="phone" v="020 8699 1872"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="website" v="http://www.horniman.ac.uk/"/>
+  <tag k="wikipedia" v="en:Horniman Museum"/>
+ </way>
+</osm>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (11832 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="159296321" visible="true" version="2" changeset="17468099" timestamp="2013-08-23T10:46:10Z" user="SK53" uid="84681">
+  <nd ref="1713982173"/>
+  <nd ref="2429048337"/>
+  <nd ref="1713982168"/>
+  <nd ref="1713982133"/>
+  <nd ref="1713982102"/>
+  <nd ref="1713982239"/>
+  <nd ref="1713982214"/>
+  <nd ref="1713982220"/>
+  <nd ref="1713982182"/>
+  <nd ref="1713982170"/>
+  <nd ref="1713982185"/>
+  <nd ref="1713982120"/>
+  <nd ref="1713982222"/>
+  <nd ref="1713982258"/>
+  <nd ref="1713982126"/>
+  <nd ref="1713982229"/>
+  <nd ref="1713982178"/>
+  <nd ref="1713982164"/>
+  <nd ref="1713982117"/>
+  <nd ref="1713982099"/>
+  <nd ref="1713982153"/>
+  <nd ref="1713982177"/>
+  <nd ref="1713982233"/>
+  <nd ref="1713982260"/>
+  <nd ref="1713982091"/>
+  <nd ref="1713982110"/>
+  <nd ref="1713982231"/>
+  <nd ref="1713982123"/>
+  <nd ref="1713982210"/>
+  <nd ref="1713982095"/>
+  <nd ref="1713982128"/>
+  <nd ref="1713982130"/>
+  <nd ref="1713982173"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="National Media Museum"/>
+  <tag k="tourism" v="museum"/>
+ </way>
+</osm>

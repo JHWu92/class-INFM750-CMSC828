@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (5509 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="412803079" visible="true" version="1" changeset="38795349" timestamp="2016-04-22T18:20:28Z" user="C Day" uid="2289345">
+  <nd ref="4141349329"/>
+  <nd ref="4141349330"/>
+  <nd ref="4141349331"/>
+  <nd ref="4141349332"/>
+  <nd ref="4141349333"/>
+  <nd ref="4141349334"/>
+  <nd ref="4141349335"/>
+  <nd ref="4141349336"/>
+  <nd ref="4141349337"/>
+  <nd ref="4141349338"/>
+  <nd ref="4141349339"/>
+  <nd ref="4141349340"/>
+  <nd ref="4141349341"/>
+  <nd ref="4141349342"/>
+  <nd ref="4141349343"/>
+  <nd ref="4141349344"/>
+  <nd ref="4141349345"/>
+  <nd ref="4141349346"/>
+  <nd ref="4141349347"/>
+  <nd ref="4141349348"/>
+  <nd ref="4141349349"/>
+  <nd ref="4141349350"/>
+  <nd ref="4141349329"/>
+  <tag k="addr:city" v="Tring"/>
+  <tag k="addr:housename" v="The Walter Rothschild Building"/>
+  <tag k="addr:postcode" v="HP23 6AP"/>
+  <tag k="addr:street" v="Akeman Street"/>
+  <tag k="building" v="public"/>
+  <tag k="name" v="Natural History Musuem - tring"/>
+ </way>
+</osm>

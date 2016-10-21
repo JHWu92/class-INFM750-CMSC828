@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (27514 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="24642569" visible="true" version="34" changeset="42853312" timestamp="2016-10-13T09:13:40Z" user="Russ" uid="3306">
+  <nd ref="281135653"/>
+  <nd ref="1373665464"/>
+  <nd ref="1373665456"/>
+  <nd ref="20626320"/>
+  <nd ref="1334645227"/>
+  <nd ref="1334645268"/>
+  <nd ref="1835528916"/>
+  <nd ref="1334645265"/>
+  <nd ref="1334645257"/>
+  <nd ref="267871957"/>
+  <nd ref="1240169407"/>
+  <nd ref="1373665459"/>
+  <nd ref="1373665457"/>
+  <nd ref="1373665458"/>
+  <nd ref="4445327808"/>
+  <nd ref="1373665454"/>
+  <nd ref="20626323"/>
+  <nd ref="1334645196"/>
+  <nd ref="1334645250"/>
+  <nd ref="281135653"/>
+  <tag k="addr:city" v="London"/>
+  <tag k="addr:postcode" v="SE1 9TG"/>
+  <tag k="addr:street" v="Bankside"/>
+  <tag k="amenity" v="arts_centre"/>
+  <tag k="building" v="yes"/>
+  <tag k="building:facade:material" v="brick"/>
+  <tag k="building:levels" v="3"/>
+  <tag k="name" v="Tate Modern"/>
+  <tag k="name:he" v="מוזיאון טייט מודרן"/>
+  <tag k="name:ko" v="테이트 모던"/>
+  <tag k="name:ru" v="Тейт Модерн"/>
+  <tag k="old_name" v="Bankside Power Station"/>
+  <tag k="opening_hours" v="Su-Th 10:00-18:00; Fr-Sa 10:00-22:00"/>
+  <tag k="source:addr" v="website"/>
+  <tag k="toilets:wheelchair" v="yes"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="website" v="http://www.tate.org.uk/modern"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikipedia" v="en:Tate Modern"/>
+ </way>
+</osm>

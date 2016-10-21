@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (19385 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="24436446" visible="true" version="16" changeset="41224202" timestamp="2016-08-03T20:47:09Z" user="Jonga" uid="1388075">
+  <nd ref="265590378"/>
+  <nd ref="265590379"/>
+  <nd ref="265590380"/>
+  <nd ref="265590381"/>
+  <nd ref="265590382"/>
+  <nd ref="4334514707"/>
+  <nd ref="265590378"/>
+  <tag k="amenity" v="public_building"/>
+  <tag k="name" v="Natural History Museum"/>
+  <tag k="name:ca" v="Museu d'Història Natural"/>
+  <tag k="name:de" v="Naturhistorisches Museum"/>
+  <tag k="name:en" v="Natural History Museum"/>
+  <tag k="name:es" v="Museo de Historia Natural"/>
+  <tag k="name:fr" v="Musée d'histoire naturelle"/>
+  <tag k="name:it" v="Museo di storia naturale"/>
+  <tag k="name:pl" v="Muzeum Historii Naturalnej"/>
+  <tag k="name:pt" v="Museu de História Natural"/>
+  <tag k="name:ro" v="Muzeul de Istorie Naturală"/>
+  <tag k="name:uk" v="Музей природознавства"/>
+  <tag k="ref:herbarium" v="BM"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="website" v="http://www.nhm.ac.uk/"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q309388"/>
+  <tag k="wikipedia" v="en:Natural History Museum, London"/>
+ </way>
+</osm>

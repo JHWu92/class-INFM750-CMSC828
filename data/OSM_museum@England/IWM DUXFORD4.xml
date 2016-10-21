@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (27514 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="22001429" visible="true" version="4" changeset="11988374" timestamp="2012-06-23T12:25:22Z" user="Borbus" uid="379166">
+  <nd ref="237042657"/>
+  <nd ref="237042660"/>
+  <nd ref="237042664"/>
+  <nd ref="237042673"/>
+  <nd ref="237042657"/>
+  <tag k="building" v="hangar"/>
+  <tag k="name" v="Imperial War Museum Duxford (Battle of Britain)"/>
+  <tag k="tourism" v="museum"/>
+ </way>
+</osm>

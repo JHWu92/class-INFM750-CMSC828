@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (13735 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="22001427" visible="true" version="5" changeset="11339676" timestamp="2012-04-18T02:30:36Z" user="Mauls" uid="24119">
+  <nd ref="237042630"/>
+  <nd ref="1565174219"/>
+  <nd ref="1565174196"/>
+  <nd ref="1565174256"/>
+  <nd ref="1565174275"/>
+  <nd ref="1565174133"/>
+  <nd ref="1565174230"/>
+  <nd ref="1565174190"/>
+  <nd ref="237042634"/>
+  <nd ref="237042637"/>
+  <nd ref="1565174182"/>
+  <nd ref="1565174176"/>
+  <nd ref="1565174258"/>
+  <nd ref="237042639"/>
+  <nd ref="237042630"/>
+  <tag k="addr:postcode" v="CB22 4QR"/>
+  <tag k="building" v="hangar"/>
+  <tag k="name" v="Imperial War Museum Duxford (Airspace)"/>
+  <tag k="tourism" v="museum"/>
+ </way>
+</osm>

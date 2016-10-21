@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (17455 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="157514652" visible="true" version="4" changeset="21675230" timestamp="2014-04-13T21:45:59Z" user="daviesp12" uid="722193">
+  <nd ref="1676133131"/>
+  <nd ref="1676133083"/>
+  <nd ref="1676133129"/>
+  <nd ref="2625334266"/>
+  <nd ref="1676133112"/>
+  <nd ref="1676133053"/>
+  <nd ref="2517642932"/>
+  <nd ref="2517642931"/>
+  <nd ref="1676133000"/>
+  <nd ref="1676133035"/>
+  <nd ref="1676133019"/>
+  <nd ref="1676133076"/>
+  <nd ref="1676133200"/>
+  <nd ref="1676133198"/>
+  <nd ref="1676133178"/>
+  <nd ref="1676133170"/>
+  <nd ref="1676133131"/>
+  <tag k="building" v="yes"/>
+  <tag k="building:colour" v="#AC8A6D"/>
+  <tag k="building:levels" v="6"/>
+  <tag k="building:material" v="brick"/>
+  <tag k="name" v="Britannia Pavillion"/>
+  <tag k="roof:colour" v="#989984"/>
+ </way>
+</osm>

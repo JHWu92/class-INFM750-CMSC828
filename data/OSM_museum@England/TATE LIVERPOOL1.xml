@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (19471 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="157514651" visible="true" version="3" changeset="31799914" timestamp="2015-06-07T20:48:42Z" user="Pashley" uid="2139010">
+  <nd ref="1676133076"/>
+  <nd ref="1676133019"/>
+  <nd ref="1676133010"/>
+  <nd ref="1676132980"/>
+  <nd ref="1676132978"/>
+  <nd ref="1676132982"/>
+  <nd ref="1676133093"/>
+  <nd ref="1676133109"/>
+  <nd ref="1676133157"/>
+  <nd ref="1676133135"/>
+  <nd ref="1676133195"/>
+  <nd ref="1676133204"/>
+  <nd ref="1676133266"/>
+  <nd ref="1676133259"/>
+  <nd ref="1676133286"/>
+  <nd ref="1676133299"/>
+  <nd ref="1676133350"/>
+  <nd ref="1676133334"/>
+  <nd ref="1676133431"/>
+  <nd ref="1676133436"/>
+  <nd ref="1676133076"/>
+  <tag k="building" v="yes"/>
+  <tag k="building:colour" v="#AC8A6D"/>
+  <tag k="building:levels" v="6"/>
+  <tag k="building:material" v="brick"/>
+  <tag k="roof:colour" v="#989984"/>
+ </way>
+</osm>

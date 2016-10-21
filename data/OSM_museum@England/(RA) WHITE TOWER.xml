@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (7690 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="369135772" visible="true" version="5" changeset="41095390" timestamp="2016-07-28T21:04:43Z" user="Mauls" uid="24119">
+  <nd ref="3729515366"/>
+  <nd ref="3729515371"/>
+  <nd ref="3729515369"/>
+  <nd ref="3729515364"/>
+  <nd ref="3729515361"/>
+  <nd ref="3729515365"/>
+  <nd ref="3729515363"/>
+  <nd ref="3729515357"/>
+  <nd ref="3729515356"/>
+  <nd ref="3729515360"/>
+  <nd ref="3729515358"/>
+  <nd ref="3729515367"/>
+  <nd ref="3729515372"/>
+  <nd ref="3729515375"/>
+  <nd ref="3729515379"/>
+  <nd ref="3729515381"/>
+  <nd ref="3729515378"/>
+  <nd ref="3729515374"/>
+  <nd ref="3729515368"/>
+  <nd ref="3729515362"/>
+  <nd ref="3729515359"/>
+  <nd ref="3729515355"/>
+  <nd ref="3729515354"/>
+  <nd ref="3729515351"/>
+  <nd ref="3729515352"/>
+  <nd ref="3729515350"/>
+  <nd ref="3729515349"/>
+  <nd ref="3729515348"/>
+  <nd ref="3729515346"/>
+  <nd ref="3729515347"/>
+  <nd ref="3729515345"/>
+  <nd ref="3729515344"/>
+  <nd ref="3729515342"/>
+  <nd ref="3729515343"/>
+  <nd ref="3729515341"/>
+  <nd ref="3729515340"/>
+  <nd ref="3729515338"/>
+  <nd ref="3729515339"/>
+  <nd ref="3729515336"/>
+  <nd ref="3729515335"/>
+  <nd ref="3729515334"/>
+  <nd ref="3729515333"/>
+  <nd ref="3729515328"/>
+  <nd ref="3729515325"/>
+  <nd ref="3729514624"/>
+  <nd ref="3729514622"/>
+  <nd ref="3729514621"/>
+  <nd ref="3729514620"/>
+  <nd ref="3729514619"/>
+  <nd ref="3729514611"/>
+  <nd ref="3729514594"/>
+  <nd ref="3729514587"/>
+  <nd ref="3729514591"/>
+  <nd ref="3729514595"/>
+  <nd ref="3729514590"/>
+  <nd ref="3729514592"/>
+  <nd ref="3729514598"/>
+  <nd ref="3729514604"/>
+  <nd ref="3729514596"/>
+  <nd ref="3729514599"/>
+  <nd ref="3729514605"/>
+  <nd ref="3729514607"/>
+  <nd ref="3729514600"/>
+  <nd ref="3729514602"/>
+  <nd ref="3729514609"/>
+  <nd ref="3729514612"/>
+  <nd ref="3729514608"/>
+  <nd ref="3729514610"/>
+  <nd ref="3729514614"/>
+  <nd ref="3729514617"/>
+  <nd ref="3729514613"/>
+  <nd ref="3729514616"/>
+  <nd ref="3729514618"/>
+  <nd ref="3729515327"/>
+  <nd ref="3729515326"/>
+  <nd ref="3729515329"/>
+  <nd ref="3729515330"/>
+  <nd ref="3729515383"/>
+  <nd ref="3729515382"/>
+  <nd ref="3729515377"/>
+  <nd ref="3729515373"/>
+  <nd ref="3729515380"/>
+  <nd ref="3729515376"/>
+  <nd ref="3729515370"/>
+  <nd ref="3729515366"/>
+  <tag k="addr:housename" v="White Tower"/>
+  <tag k="building" v="castle"/>
+  <tag k="building:material" v="stone"/>
+  <tag k="height" v="27"/>
+  <tag k="historic" v="castle"/>
+  <tag k="roof:material" v="metal"/>
+  <tag k="tourism" v="attraction"/>
+  <tag k="wheelchair" v="limited"/>
+ </way>
+</osm>

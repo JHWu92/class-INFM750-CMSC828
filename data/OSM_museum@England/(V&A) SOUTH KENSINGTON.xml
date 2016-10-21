@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (17514 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="4960173" visible="true" version="20" changeset="36405163" timestamp="2016-01-06T14:55:00Z" user="beweta" uid="152074">
+  <nd ref="32830560"/>
+  <nd ref="32830548"/>
+  <nd ref="1106651377"/>
+  <nd ref="1321766293"/>
+  <nd ref="3761984342"/>
+  <nd ref="3761984343"/>
+  <nd ref="3761984345"/>
+  <nd ref="1106651435"/>
+  <nd ref="1106651576"/>
+  <nd ref="32830549"/>
+  <nd ref="1321766797"/>
+  <nd ref="1321766253"/>
+  <nd ref="1321766486"/>
+  <nd ref="1321766728"/>
+  <nd ref="1321766186"/>
+  <nd ref="1321766402"/>
+  <nd ref="1321766648"/>
+  <nd ref="1321766098"/>
+  <nd ref="32830550"/>
+  <nd ref="1321766339"/>
+  <nd ref="1321766602"/>
+  <nd ref="1321766841"/>
+  <nd ref="1321766285"/>
+  <nd ref="32830551"/>
+  <nd ref="1166239573"/>
+  <nd ref="1166239574"/>
+  <nd ref="1106651517"/>
+  <nd ref="1106651595"/>
+  <nd ref="1106651471"/>
+  <nd ref="1106651422"/>
+  <nd ref="32830552"/>
+  <nd ref="1321766540"/>
+  <nd ref="1321766788"/>
+  <nd ref="1321766237"/>
+  <nd ref="1321766466"/>
+  <nd ref="1356891445"/>
+  <nd ref="1356891443"/>
+  <nd ref="32830560"/>
+ </way>
+</osm>

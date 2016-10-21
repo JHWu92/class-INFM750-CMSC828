@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.5 (27083 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="31426337" visible="true" version="1" changeset="640448" timestamp="2009-02-23T19:25:52Z" user="ddixon" uid="35638">
+  <nd ref="350434003"/>
+  <nd ref="350434023"/>
+  <nd ref="350434032"/>
+  <nd ref="350434042"/>
+  <nd ref="350434049"/>
+  <nd ref="350434003"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Locomotion - The National Railway Museum at Shildon"/>
+  <tag k="tourism" v="museum"/>
+ </way>
+</osm>
