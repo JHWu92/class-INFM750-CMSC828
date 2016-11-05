@@ -1,60 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="CGImap 0.5.5 (27509 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
- <way id="48041275" visible="true" version="11" changeset="21687541" timestamp="2014-04-14T15:01:34Z" user="cquest" uid="158826">
-  <nd ref="610812955"/>
-  <nd ref="610812886"/>
-  <nd ref="610812887"/>
-  <nd ref="610812890"/>
-  <nd ref="610812891"/>
-  <nd ref="610812892"/>
-  <nd ref="610812898"/>
-  <nd ref="610812899"/>
-  <nd ref="610812900"/>
-  <nd ref="610812901"/>
-  <nd ref="610812902"/>
-  <nd ref="610812903"/>
-  <nd ref="610812904"/>
-  <nd ref="610812905"/>
-  <nd ref="610812906"/>
-  <nd ref="610812907"/>
-  <nd ref="610812908"/>
-  <nd ref="610812909"/>
-  <nd ref="610812910"/>
-  <nd ref="610812913"/>
-  <nd ref="610812914"/>
-  <nd ref="610812915"/>
-  <nd ref="610812916"/>
-  <nd ref="610812918"/>
-  <nd ref="610812919"/>
-  <nd ref="610812921"/>
-  <nd ref="610812924"/>
-  <nd ref="610812925"/>
-  <nd ref="610812926"/>
-  <nd ref="610812927"/>
-  <nd ref="610812928"/>
-  <nd ref="610812930"/>
-  <nd ref="610812931"/>
-  <nd ref="610812932"/>
-  <nd ref="610812933"/>
-  <nd ref="610812934"/>
-  <nd ref="610812935"/>
-  <nd ref="610812940"/>
-  <nd ref="610812941"/>
-  <nd ref="610812946"/>
-  <nd ref="610812950"/>
-  <nd ref="610812951"/>
-  <nd ref="610812952"/>
-  <nd ref="610812955"/>
-  <tag k="amenity" v="arts_centre"/>
-  <tag k="building" v="yes"/>
-  <tag k="dcgis:captureyear" v="20080530"/>
-  <tag k="dcgis:dataset" v="buildings"/>
-  <tag k="dcgis:featurecode" v="2000"/>
-  <tag k="dcgis:gis_id" v="90633"/>
-  <tag k="name" v="National Portrait Gallery / Smithsonian American Art Museum"/>
-  <tag k="source" v="dcgis"/>
-  <tag k="tourism" v="museum"/>
-  <tag k="website" v="http://www.npg.si.edu/"/>
-  <tag k="wikipedia" v="en:Archives (WMATA station)"/>
+<osm version="0.6" generator="CGImap 0.5.8 (16971 thorn-04.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="59161723" visible="true" version="11" changeset="41518296" timestamp="2016-08-17T18:35:30Z" user="belgonan" uid="4434420">
+  <nd ref="733691158"/>
+  <nd ref="26630996"/>
+  <nd ref="1637789611"/>
+  <nd ref="1637789620"/>
+  <nd ref="1637789619"/>
+  <nd ref="1637789623"/>
+  <nd ref="1637789618"/>
+  <nd ref="1637789616"/>
+  <nd ref="1637789614"/>
+  <nd ref="1637789612"/>
+  <nd ref="1637789615"/>
+  <nd ref="1637789613"/>
+  <nd ref="1637789605"/>
+  <nd ref="1637789606"/>
+  <nd ref="1637789601"/>
+  <nd ref="1637789600"/>
+  <nd ref="1835289526"/>
+  <nd ref="1637789597"/>
+  <nd ref="1835289527"/>
+  <nd ref="1835289528"/>
+  <nd ref="1637789572"/>
+  <nd ref="733691174"/>
+  <nd ref="26630995"/>
+  <nd ref="1637789579"/>
+  <nd ref="1637789578"/>
+  <nd ref="1637789583"/>
+  <nd ref="1637789584"/>
+  <nd ref="1637789586"/>
+  <nd ref="733691200"/>
+  <nd ref="1637789587"/>
+  <nd ref="1637789589"/>
+  <nd ref="1637789588"/>
+  <nd ref="1637789590"/>
+  <nd ref="1637789591"/>
+  <nd ref="1637789607"/>
+  <nd ref="733691158"/>
+  <tag k="alt_name:es" v="Galería Nacional de Retratos."/>
+  <tag k="building" v="gallery"/>
+  <tag k="name" v="National Portrait Gallery"/>
+  <tag k="name:gl" v="Galería Nacional de Retratos"/>
+  <tag k="name:ru" v="Национальная галерея"/>
+  <tag k="name:uk" v="Національна портретна галерея"/>
+  <tag k="opening_hours" v="Sa-We 10:00-18:00; Th-Fr 10:00-21:00"/>
+  <tag k="postcode" v="WC2H 0HE"/>
+  <tag k="shop" v="art"/>
+  <tag k="source" v="Bing"/>
+  <tag k="website" v="http://www.npg.org.uk"/>
+  <tag k="wikidata" v="Q238587"/>
+  <tag k="wikipedia" v="en:National Portrait Gallery (London)"/>
  </way>
 </osm>
