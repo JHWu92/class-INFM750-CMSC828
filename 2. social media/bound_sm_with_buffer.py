@@ -119,24 +119,24 @@ def main():
     # place_type = 'museum'
     # place_type = 'nationalpark'
     place_polygons_fns = [
-        'place_polys_museum.geojson',
+        # 'place_polys_museum.geojson',
         # 'place_polys_museum_convex.geojson',
+        'place_polys_museum_convex_5m.geojson',
+        'place_polys_museum_convex_10m.geojson',
         # 'place_polys_museum_convex_50m.geojson',
         # 'place_polys_museum_convex_100m.geojson'
     ]
     fl_dir = u'd:\\★★学习工作\\Life in Maryland\\INFM750,CMSC828E Advanced Data Science\\project\\flickr\\museum_radius\\collected\\'
-    tw_dir =  u'd:\\★★学习工作\\Life in Maryland\\INFM750,CMSC828E Advanced Data Science\\project\\twitter\\museums\\'
+    tw_dir = u'd:\\★★学习工作\\Life in Maryland\\INFM750,CMSC828E Advanced Data Science\\project\\twitter\\museums\\'
     sm_data = [
-        # ['tw', tw_dir+'completed\\collected\\tweets.txt', '1'],
-        # ['tw', tw_dir+'collected\\tweets.txt', '2'],
+        ['tw', tw_dir+'completed\\collected\\tweets.txt', '1'],
+        ['tw', tw_dir+'collected\\tweets.txt', '2'],
         ['fl', fl_dir+'flickr_photos_1.txt','1'],
         ['fl', fl_dir+'flickr_photos_2.txt','2'],
         ['fl', fl_dir+'flickr_photos_3.txt','3'],
     ]
 
     for social_media_type, social_media_path, path_suffix in sm_data:
-        # social_media_type, social_media_path, path_suffix = 'twitter','twitter/museums/completed/collected/tweets.txt', '1'
-        # social_media_type, social_media_path, path_suffix =  'twitter', 'twitter/museums/collected/tweets.txt', '2'
         print 'getting social media:',social_media_type
         social_media_gpdf = get_twitter_gpdf(social_media_path) if social_media_type=='tw' else get_flickr_gpdf(social_media_path)
         print 'got social media', costs()
