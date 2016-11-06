@@ -11,6 +11,7 @@ import shapely.geometry as shpgeo
 from ast import literal_eval
 import numpy as np
 from dateutil.parser import parse as date_parse
+import json
 
 START_TIME = datetime.datetime.now()
 
@@ -37,14 +38,8 @@ def costs(start_time=START_TIME):
                                                                       delta_total_seconds_int / 60 % 60,
                                                                       delta_total_seconds_int % 60,
                                                                       delta_total_seconds_int)
-def get_poly_gdf(poly_path, buffer_ratio=None):
-    df_polygon = pd.read_csv(poly_path, sep='\t', header=None, names=['place', 'cntr', 'radius', 'geometry'])
-    df_polygon.place = df_polygon.place.apply(lambda x: x.rsplit('_', 3)[0])
-    df_polygon.geometry = df_polygon.geometry.apply(lambda x: shpgeo.Polygon(literal_eval(x)))
-    gdf_poly = gp.GeoDataFrame(df_polygon)
-    if buffer_ratio:
-        pass
-    gdf_poly.drop(['cntr','radius'],inplace=True, axis=1)
+def get_poly_gdf(poly_path):
+    gdf_poly = gp.read_file(poly_path)
     return gdf_poly
 
 def get_twitter(social_media_path):
@@ -60,50 +55,99 @@ def get_twitter(social_media_path):
 
 def parse_twitter_ts(ts):
     return date_parse(ts)
-import json
-def extract_flickr(js_str):
-    data = json.loads(js_str)
-    photo = data['photo']
-    pid = photo['id']
+
+def parse_linux_time(ts):
+    return datetime.datetime.fromtimestamp(int(ts)).strftime('%Y-%m-%d %H:%M:%S')
+
+def extract_flickr_line(line):
+    data = json.loads(line)
     try:
-        ts = date_taken = photo['dates']['taken']
+        photo = data['photo']
+        pid = photo['id']
+        dateuploaded = parse_linux_time(photo['dateuploaded'])
+        username = photo['owner']['username']
+        realname = photo['owner']['realname']
+        path_alias = photo['owner']['path_alias']
+        owner_loc = photo['owner']['location']
+        # title = photo['title']['_content']
+        comments = photo['comments']['_content']
+        views = photo['views']
+        lat = photo['location']['latitude']
+        lon = photo['location']['longitude']
+        loc_accuracy = photo['location']['accuracy']
+        loc_placeid = photo['location']['place_id'] if 'place_id' in photo['location'] else ''
+        date_taken = photo['dates']['taken']
+        date_posted = parse_linux_time(photo['dates']['posted'])
+        date_lastupdate = parse_linux_time(photo['dates']['lastupdate'])
+        date_takengranularity = photo['dates']['takengranularity']
+        date_takenunknown = photo['dates']['takenunknown']
+        return [pid, dateuploaded, username, realname, path_alias, owner_loc, comments, views, lat, lon, loc_accuracy, loc_placeid,
+                            date_taken, date_posted, date_lastupdate, date_takengranularity, date_takenunknown]
     except Exception as e:
-        print pid,e
+        return str(e)
 
 def get_flickr(social_media_path):
-    return
+    col_interest = ['smid', 'dateuploaded', 'username', 'realname', 'path_alias', 'owner_loc', 'comments', 'views', 'lat', 'lon',
+                    'loc_accuracy', 'loc_placeid', 'date_taken', 'date_posted', 'date_lastupdate', 'date_takengranularity', 'date_takenunknown']
+
+    flickrs = []
+    with open(social_media_path) as f:
+        for cnt,line in enumerate(f):
+            fl = extract_flickr_line(line)
+            if type(fl)==list:
+                flickrs.append(fl)
+            else:
+                print 'extract flickr Error in line:', cnt, fl
+    flickr_df = pd.DataFrame(flickrs, columns=col_interest)
+    return flickr_df
 
 def main():
     # LOGGER.info('test')
-    place_type = 'museum'
+    data_dir = '../data/'
+    # place_type = 'museum'
     # place_type = 'nationalpark'
-    place_polygons_path = '%s_polygon_osm.tsv' % place_type
+    place_polygons_fns = [
+        'place_polys_museum_convex.geojson',
+        'place_polys_museum_convex_50m.geojson',
+        'place_polys_museum_convex_100m.geojson'
+    ]
+    fl_dir = u'd:\\★★学习工作\\Life in Maryland\\INFM750,CMSC828E Advanced Data Science\\project\\flickr\\museum_radius\\collected\\'
+    tw_dir =  u'd:\\★★学习工作\\Life in Maryland\\INFM750,CMSC828E Advanced Data Science\\project\\twitter\\museums\\'
+    sm_data = [
+        ['tw', tw_dir+'completed\\collected\\tweets.txt', '_1'],
+        ['tw', tw_dir+'collected\\tweets.txt', '_2'],
+        ['fl', fl_dir+'flickr_photos_1.txt',''],
+        ['fl', fl_dir+'flickr_photos_2.txt',''],
+        ['fl', fl_dir+'flickr_photos_3.txt',''],
+    ]
 
-    buffer_ratio = 1
-    print 'getting polygons of %s with buffer ratio=' % place_type ,buffer_ratio, costs()
-    place_polygons = get_poly_gdf(place_polygons_path)
+    for social_media_type, social_media_path, path_suffix in sm_data:
+        # social_media_type, social_media_path, path_suffix = 'twitter','twitter/museums/completed/collected/tweets.txt', '1'
+        # social_media_type, social_media_path, path_suffix =  'twitter', 'twitter/museums/collected/tweets.txt', '2'
+        print 'getting social media:',social_media_type
+        social_media_gpdf = get_twitter(social_media_path) if social_media_type=='tw' else get_flickr(social_media_path)
+        print 'got social media', costs()
 
-    # social_media_type, social_media_path, path_suffix = 'twitter','twitter/museums/completed/collected/tweets.txt', '1'
-    social_media_type, social_media_path, path_suffix =  'twitter', 'twitter/museums/collected/tweets.txt', '2'
+        for place_polygons_fn in place_polygons_fns:
+            print 'getting polygons of %s' % place_polygons_fn
+            place_polygons = get_poly_gdf(data_dir+place_polygons_fn)
+            # print place_polygons
 
-    print 'getting social media:',social_media_type, costs()
-    social_media_gpdf = get_twitter(social_media_path) if social_media_type=='twitter' else get_flickr(social_media_path)
+            print 'sjoining social media and place polygon'
+            joined_gdf = gp.sjoin(social_media_gpdf, place_polygons, how='left')
+            social_media_in_place = joined_gdf[~joined_gdf.place.isnull()].copy()
+            print 'sjoined social media and place polygon', costs()
 
-    print 'sjoining social media and place polygon', costs()
-    joined_gdf = gp.sjoin(social_media_gpdf, place_polygons, how='left')
-    social_media_in_place = joined_gdf[~joined_gdf.place.isnull()].copy()
+            print 'adding fields to social media'
+            social_media_in_place.place = social_media_in_place.place.apply(lambda x: x[:-1] if x[-1].isdigit() else x)
+            if social_media_type=='tw':
+                social_media_in_place.ts = social_media_in_place.ts.apply(parse_twitter_ts)
+            social_media_in_place.drop(['index_right'],inplace=True, axis=1)
+            print 'added fields', costs()
 
-    print 'adding fields to social media', costs()
-    social_media_in_place.place = social_media_in_place.place.apply(lambda x: x[:-1] if x[-1].isdigit() else x)
-    if social_media_type=='twitter':
-        social_media_in_place.ts = social_media_in_place.ts.apply(parse_twitter_ts)
-    social_media_in_place['ymd'] = social_media_in_place.ts.apply(lambda x: '%s_%02d_%02d' %(x.year, int(x.month),int(x.day)))
-    social_media_in_place['ym'] = social_media_in_place.ymd.apply(lambda x: x[:-3])
-    social_media_in_place.drop(['index_right'],inplace=True, axis=1)
-
-    print 'writing results', costs()
-    sm_output_path = '%s\\%s%s_buffer=%d.csv' % (place_type, social_media_type, path_suffix, buffer_ratio)
-    social_media_in_place.to_csv(sm_output_path)
+            sm_output_path = '%ssm_%s%s_%s.csv' % (data_dir, social_media_type, path_suffix, place_polygons_fn.replace('.geojson',''))
+            print 'writing results',sm_output_path
+            social_media_in_place.to_csv(sm_output_path)
 
     return
 
