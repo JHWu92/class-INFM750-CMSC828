@@ -35,9 +35,12 @@ def costs(start_time=START_TIME):
                                                                       delta_total_seconds_int)
 
 
-def get_dates():
+def get_dates(divided_6mns=True):
     date = datetime.datetime(2014,1,1)
     date_until = datetime.datetime(2016,9,1)
+    if not divided_6mns:
+        return [date, date_until]
+        pass
     dates = []
     while date < date_until:
         dates.append(date)
@@ -62,7 +65,7 @@ def main(places, dir, dates=[], given_dates=False):
     mkdir(dir)
     for place, latlon, radius, resume_date in places:
         print place
-        if not given_dates: dates = get_dates()
+        if not given_dates: dates = get_dates(False)
         while len(dates)>0:
             print 'while len date', len(dates)
             date_end = dates.pop()
