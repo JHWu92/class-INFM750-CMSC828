@@ -64,6 +64,7 @@ def main(places, dir, dates=[], given_dates=False):
         print place
         if not given_dates: dates = get_dates()
         while len(dates)>0:
+            print 'while len date', len(dates)
             date_end = dates.pop()
             date_start = dates.pop()
 
@@ -78,7 +79,7 @@ def main(places, dir, dates=[], given_dates=False):
             if str_date_end == str_date_start:
                 continue
 
-            path_outfile = '%s\\%s_%s_%s.csv' % (dir, place, str_date_start, str_date_end)
+            path_outfile = dir+'%s_%s_%s.csv' % ( place, str_date_start, str_date_end)
             if file_exist(path_outfile):
                 print path_outfile,'exists, pass'
                 continue
@@ -86,12 +87,12 @@ def main(places, dir, dates=[], given_dates=False):
             try:
                 scraper = TwitterScraper.Scraper('', begin_date=str_date_start, end_date=str_date_end,
                                      near=latlon, within=radius, filename = path_outfile)
-
                 print 'scarping %s' % path_outfile, costs()
                 str_last_timestamp = scraper.scrape()
             except Exception as e:
                 LOGGER.info(str(e)+'\t'+path_outfile)
                 print str(e)+'\t'+path_outfile
+                raise e
                 continue
 
             if str_last_timestamp:

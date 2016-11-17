@@ -5,6 +5,7 @@ import datetime
 import sys
 import logging
 import os
+import glob
 
 START_TIME = datetime.datetime.now()
 
@@ -32,14 +33,6 @@ def costs(start_time=START_TIME):
                                                                       delta_total_seconds_int % 60,
                                                                       delta_total_seconds_int)
 
-
-import geopandas as gp
-PLACE_POLYS_NP = '../data/place_polys_np.geojson'
-place_gpdf = gp.read_file(PLACE_POLYS_NP)
-radius = place_gpdf['radius+1km'].apply(lambda x: '{}km'.format(int(x/1000)+1)).values
-cntr = place_gpdf.cntr.apply(eval).apply(lambda x: (x[1],x[0])).values
-place = place_gpdf['place##cnt'].values
-PLACES = zip(place, cntr, radius)
 
 import flickrapi
 import time
@@ -107,18 +100,35 @@ def save_flickr(file_name, parameters, photo_list,flickr_apis):
         for l in result_list:
             f.write(l+'\n')
     print 'finish file:', file_name, costs()
-def mkdir(dir):
-    if not os.path.exists(dir):
-        os.makedirs(dir)
+def mkdir(ddir):
+    if not os.path.exists(ddir):
+        os.makedirs(ddir)
 
+
+import geopandas as gp
+PLACE_POLYS_NP = '../data/place_polys_np.geojson'
+place_gpdf = gp.read_file(PLACE_POLYS_NP)
+place_gpdf_small = place_gpdf[place_gpdf['radius+1km']<=32000]
+radius = place_gpdf_small['radius+1km'].apply(lambda x: '{}km'.format(int(x/1000)+1)).values
+cntr = place_gpdf_small.cntr.apply(eval).apply(lambda x: (x[1],x[0])).values
+place = place_gpdf_small['place##cnt'].values
+places_small = zip(place, cntr, radius)
 
 def main():
     # LOGGER.info('test')
     flickr_apis = get_flickr_apis()
-    dir = '../data/social_media_raw/flickr/np/'
-    mkdir(dir)
-    for place, [lat,lon], radius in PLACES:
+    ddir = '../data/social_media_raw/flickr/np/'
+    mkdir(ddir)
+    crawled_places = set([f.rsplit('_',2)[0].split('\\')[1] for f in glob.glob(ddir+'*.*')])
+    print 'crawled places len =',crawled_places.__len__()
+    cnt_skip = 0
+    for place, [lat,lon], radius in places_small:
+        if place in crawled_places:
+            cnt_skip+=1
+            print 'skip', cnt_skip, place
+            continue
         dates = [datetime.datetime(2014,1,1), datetime.datetime(2016,9,1)]
+        print '\n==========================='
         print place, lon, lat, radius
         while len(dates)>0:
             date_end = dates.pop()
@@ -140,7 +150,7 @@ def main():
                 break
             else:
                 parameters = [date_start_str, date_end_str, lon, lat, radius]
-                file_name = dir+'%s_%s_%s.txt' % (place, date_start_str,date_end_str)
+                file_name = ddir+'%s_%s_%s.txt' % (place, date_start_str,date_end_str)
                 file_name = file_name.replace(':','-')
                 print 'total < 3500, go to save flickr for every following pages',date_start_str, date_end_str
                 save_flickr(file_name,parameters,photo_list,flickr_apis)
