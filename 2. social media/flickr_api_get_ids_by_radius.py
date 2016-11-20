@@ -106,7 +106,8 @@ def mkdir(ddir):
 
 
 import geopandas as gp
-PLACE_POLYS_NP = '../data/place_polys_np.geojson'
+from sm_path import *
+PLACE_POLYS_NP = fl_np_geoj
 place_gpdf = gp.read_file(PLACE_POLYS_NP)
 place_gpdf_small = place_gpdf[place_gpdf['radius+1km']<=32000]
 radius = place_gpdf_small['radius+1km'].apply(lambda x: '{}km'.format(int(x/1000)+1)).values
@@ -117,7 +118,7 @@ places_small = zip(place, cntr, radius)
 def main():
     # LOGGER.info('test')
     flickr_apis = get_flickr_apis()
-    ddir = '../data/social_media_raw/flickr/np/'
+    ddir = fl_np_dir
     mkdir(ddir)
     crawled_places = set([f.rsplit('_',2)[0].split('\\')[1] for f in glob.glob(ddir+'*.*')])
     print 'crawled places len =',crawled_places.__len__()
