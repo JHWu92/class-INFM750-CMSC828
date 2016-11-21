@@ -6,6 +6,14 @@ import sys
 import logging
 import os
 import glob
+import sys, os
+sys.path.insert(0, os.path.abspath('../'))
+from utils.geofunc import grid_area, haversine
+
+import json
+import geopandas as gp
+from sm_path import *
+
 
 START_TIME = datetime.datetime.now()
 
@@ -44,7 +52,6 @@ def get_flickr_apis():
           ['d188385b0e69fcdea63ca7d9611123b5','6357734eda8665f6']]
     return [flickrapi.FlickrAPI(api_key, secret_api_key) for api_key, secret_api_key in authns]
 
-CNT_REQUEST = 0
 
 def work_every_sec(sec=1):
     sec = float(sec)
@@ -55,6 +62,7 @@ def work_every_sec(sec=1):
         time.sleep(0.05)
 
 
+CNT_REQUEST = 0
 def get_api(flickr_apis):
     global CNT_REQUEST
     flickr = flickr_apis[CNT_REQUEST % len(flickr_apis)]
@@ -73,7 +81,6 @@ def get_info_list(p_list):
     photo = photos['photo']
     photo_cnt = len(photo)
     return photo_cnt, stat, total, perpage, page, pages
-import json
 
 def save_flickr(file_name, parameters, photo_list,flickr_apis):
     result_list = [json.dumps(photo_list)]
@@ -104,26 +111,64 @@ def mkdir(ddir):
     if not os.path.exists(ddir):
         os.makedirs(ddir)
 
+def get_max_dis_from_center_to_ext(centr,ext_coords):
+    lon1, lat1 = centr
+    return max([haversine(lon1,lat1, lon2,lat2) for lon2, lat2 in ext_coords])
 
-import geopandas as gp
-from sm_path import *
-PLACE_POLYS_NP = fl_np_geoj
-place_gpdf = gp.read_file(PLACE_POLYS_NP)
-place_gpdf_small = place_gpdf[place_gpdf['radius+1km']<=32000]
-radius = place_gpdf_small['radius+1km'].apply(lambda x: '{}km'.format(int(x/1000)+1)).values
-cntr = place_gpdf_small.cntr.apply(eval).apply(lambda x: (x[1],x[0])).values
-place = place_gpdf_small['place##cnt'].values
-places_small = zip(place, cntr, radius)
+def get_cntr_radius(poly):
+    cntr = poly.centroid.coords[0]
+    ext_coords = poly.exterior.coords
+    radius = get_max_dis_from_center_to_ext(cntr, ext_coords)
+    return cntr, radius, ext_coords
+
+def get_place_large(place_gpdf_large):
+    import shapely.geometry as shpgeo
+    l = zip(place_gpdf_large['place##cnt'].values,
+            place_gpdf_large.geometry.values,
+            place_gpdf_large['radius+1km'].values)
+    place_large = []
+    for place, poly, radius in l:
+        cnt = 0
+        ngrid = int(radius/32000) +2
+        w,s,e,n = poly.bounds
+        gridded = grid_area((s,w),(n,e), ngrid=ngrid)
+        desire_boxes = []
+        for (s,w),(n,e) in gridded:
+            box = shpgeo.box(w,s,e,n)
+            if box.intersects(poly):
+                [lon,lat], radius, ext_coords = get_cntr_radius(box)
+                sub_place = place + '[%d]' % cnt
+                cnt+=1
+                desire_boxes.append((sub_place, [lat,lon], '{}km'.format(int(radius/1000)+1)))
+        place_large.extend(desire_boxes)
+    return place_large
+
+
+def get_places(place_gpdf):
+    place_gpdf_small = place_gpdf[place_gpdf['radius+1km']<=32000]
+
+    places_small = zip(place_gpdf_small['place##cnt'].values,
+                       place_gpdf_small.cntr.apply(eval).apply(lambda x: (x[1],x[0])).values,
+                       place_gpdf_small['radius+1km'].apply(lambda x: '{}km'.format(int(x/1000)+1)).values)
+    place_gpdf_large = place_gpdf[place_gpdf['radius+1km']>32000]
+    place_large = get_place_large(place_gpdf_large)
+    places = places_small+place_large
+    return places
 
 def main():
     # LOGGER.info('test')
+    place_polys_np = fl_np_geoj
+    place_gpdf = gp.read_file(place_polys_np)
+    places = get_places(place_gpdf)
+
     flickr_apis = get_flickr_apis()
     ddir = fl_np_dir
     mkdir(ddir)
     crawled_places = set([f.rsplit('_',2)[0].split('\\')[1] for f in glob.glob(ddir+'*.*')])
     print 'crawled places len =',crawled_places.__len__()
+
     cnt_skip = 0
-    for place, [lat,lon], radius in places_small:
+    for place, [lat,lon], radius in places:
         if place in crawled_places:
             cnt_skip+=1
             print 'skip', cnt_skip, place
