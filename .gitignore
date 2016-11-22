@@ -1,6 +1,6 @@
 *.log
 log_*
-/data/*
+/data/*/
 *.pyc
 .ipynb_checkpoints
 */.ipynb_checkpoints/*

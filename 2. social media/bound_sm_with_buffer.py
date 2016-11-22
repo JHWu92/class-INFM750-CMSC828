@@ -12,6 +12,7 @@ from ast import literal_eval
 import numpy as np
 from dateutil.parser import parse as date_parse
 import json
+from sm_path import *
 
 START_TIME = datetime.datetime.now()
 
@@ -113,27 +114,41 @@ def extract_flickr_line(line):
         return str(e)
 
 
+def clean_place(x):
+    if '##' in x:
+        x = x.split('##')[0]
+    x = x[:-1] if x[-1].isdigit() else x
+    return x.replace(' ','_')
+
+
 def main():
     # LOGGER.info('test')
-    data_dir = '../data/'
+    data_dir = '../data'
     # place_type = 'museum'
     # place_type = 'nationalpark'
     place_polygons_fns = [
         # 'place_polys_museum.geojson',
         # 'place_polys_museum_convex.geojson',
-        'place_polys_museum_convex_5m.geojson',
-        'place_polys_museum_convex_10m.geojson',
+        # 'place_polys_museum_convex_5m.geojson',
+        # 'place_polys_museum_convex_10m.geojson',
         # 'place_polys_museum_convex_50m.geojson',
-        # 'place_polys_museum_convex_100m.geojson'
+        # 'place_polys_museum_convex_100m.geojson',
+        'place_polys_np.geojson',
+        'place_polys_np_5m.geojson',
+        'place_polys_np_10m.geojson',
+        'place_polys_np_50m.geojson',
+        'place_polys_np_100m.geojson',
     ]
-    fl_dir = u'd:\\★★学习工作\\Life in Maryland\\INFM750,CMSC828E Advanced Data Science\\project\\flickr\\museum_radius\\collected\\'
-    tw_dir = u'd:\\★★学习工作\\Life in Maryland\\INFM750,CMSC828E Advanced Data Science\\project\\twitter\\museums\\'
+
+
     sm_data = [
-        ['tw', tw_dir+'completed\\collected\\tweets.txt', '1'],
-        ['tw', tw_dir+'collected\\tweets.txt', '2'],
-        ['fl', fl_dir+'flickr_photos_1.txt','1'],
-        ['fl', fl_dir+'flickr_photos_2.txt','2'],
-        ['fl', fl_dir+'flickr_photos_3.txt','3'],
+        # ['tw', tw_museum_tweet_dir+'completed\\collected\\tweets.txt', '1'],
+        # ['tw', tw_museum_tweet_dir+'\\collected\\tweets.txt', '2'],
+        # ['fl', fl_museum_info_dir+'\\flickr_photos_1.txt','1'],
+        # ['fl', fl_museum_info_dir+'\\flickr_photos_2.txt','2'],
+        # ['fl', fl_museum_info_dir+'\\flickr_photos_3.txt','3'],
+        ['fl', fl_np_info_dir + '/flickr_photos.txt', '1'],
+        ['tw', tw_np_tweet_dir + '/tweets.txt', '1'],
     ]
 
     for social_media_type, social_media_path, path_suffix in sm_data:
@@ -143,22 +158,22 @@ def main():
 
         for place_polygons_fn in place_polygons_fns:
             print 'getting polygons of %s' % place_polygons_fn
-            place_polygons = get_poly_gdf(data_dir+place_polygons_fn)
+            place_polygons = get_poly_gdf(data_dir+'/'+place_polygons_fn)
             # print place_polygons
 
-            print 'sjoining social media and place polygon'
+            print 'sjoining social media and place polygon', costs()
             joined_gdf = gp.sjoin(social_media_gpdf, place_polygons, how='left')
             social_media_in_place = joined_gdf[~joined_gdf.place.isnull()].copy()
             print 'sjoined social media and place polygon', costs()
 
-            print 'adding fields to social media'
+            print 'adding fields to social media, clean the place(remove ## or digit because of multiple polygons'
             social_media_in_place.place = social_media_in_place.place.apply(lambda x: x[:-1] if x[-1].isdigit() else x)
             if social_media_type=='tw':
                 social_media_in_place.ts = social_media_in_place.ts.apply(parse_twitter_ts)
             social_media_in_place.drop(['index_right'],inplace=True, axis=1)
             print 'added fields', costs()
 
-            sm_output_path = '%ssm#%s_%s#%s.csv' % (data_dir, social_media_type, path_suffix, place_polygons_fn.replace('.geojson',''))
+            sm_output_path = '%s/sm#%s_%s#%s.csv' % (data_dir, social_media_type, path_suffix, place_polygons_fn.replace('.geojson',''))
             print 'writing results',sm_output_path
             social_media_in_place.to_csv(sm_output_path)
 
