@@ -82,7 +82,7 @@ def main(places, dir, dates=[], given_dates=False):
             if str_date_end == str_date_start:
                 continue
 
-            path_outfile = dir+'%s_%s_%s.csv' % ( place, str_date_start, str_date_end)
+            path_outfile = dir+'/%s_%s_%s.csv' % ( place, str_date_start, str_date_end)
             if file_exist(path_outfile):
                 print path_outfile,'exists, pass'
                 continue

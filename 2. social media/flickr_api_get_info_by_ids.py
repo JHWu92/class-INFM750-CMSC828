@@ -136,16 +136,16 @@ import pandas as pd
 from sm_path import *
 DIR = fl_np_dir
 OUTPUT_DIR = fl_np_info_dir
-NO_PHOTO_FILE = OUTPUT_DIR + 'no_photo_list.tsv'
-EXISTID_FILE = OUTPUT_DIR + 'exstid.txt'
-TO_COLLECT_IDS_FILE = OUTPUT_DIR+'flickr_photos.txt'
+NO_PHOTO_FILE = OUTPUT_DIR + '/no_photo_list.tsv'
+EXISTID_FILE = OUTPUT_DIR + '/exstid.txt'
+TO_COLLECT_IDS_FILE = OUTPUT_DIR+'/flickr_photos.txt'
 
 def main():
     # LOGGER.info('test')
     mkdir(DIR)
     mkdir(OUTPUT_DIR)
     flickr_apis = get_flickr_apis()
-    glob_pattern = DIR + '*.*'
+    glob_pattern = DIR + '/*.*'
     museum_lists_file = glob.glob(glob_pattern)
     print 'len of museum lists files:', len(museum_lists_file)
 
