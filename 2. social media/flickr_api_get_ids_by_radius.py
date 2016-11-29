@@ -123,9 +123,9 @@ def get_cntr_radius(poly):
 
 def get_place_large(place_gpdf_large):
     import shapely.geometry as shpgeo
-    l = zip(place_gpdf_large['place##cnt'].values,
+    l = zip(place_gpdf_large['place'].values,
             place_gpdf_large.geometry.values,
-            place_gpdf_large['radius+1km'].values)
+            place_gpdf_large['radius'].values)
     place_large = []
     for place, poly, radius in l:
         cnt = 0
@@ -145,12 +145,12 @@ def get_place_large(place_gpdf_large):
 
 
 def get_places(place_gpdf):
-    place_gpdf_small = place_gpdf[place_gpdf['radius+1km']<=32000]
+    place_gpdf_small = place_gpdf[place_gpdf['radius']<=32000]
 
-    places_small = zip(place_gpdf_small['place##cnt'].values,
+    places_small = zip(place_gpdf_small['place'].values,
                        place_gpdf_small.cntr.apply(eval).apply(lambda x: (x[1],x[0])).values,
-                       place_gpdf_small['radius+1km'].apply(lambda x: '{}km'.format(int(x/1000)+1)).values)
-    place_gpdf_large = place_gpdf[place_gpdf['radius+1km']>32000]
+                       place_gpdf_small['radius'].apply(lambda x: '{}km'.format(int(x/1000)+1)).values)
+    place_gpdf_large = place_gpdf[place_gpdf['radius']>32000]
     place_large = get_place_large(place_gpdf_large)
     places = places_small+place_large
     return places
@@ -164,9 +164,10 @@ def main():
     flickr_apis = get_flickr_apis()
     ddir = fl_np_dir
     mkdir(ddir)
-    crawled_places = set([f.rsplit('_',2)[0].split('\\')[1] for f in glob.glob(ddir+'*.*')])
+    print ddir
+    crawled_places = set([f.rsplit('_',2)[0].split('\\')[1] for f in glob.glob(ddir+'/*.*')])
     print 'crawled places len =',crawled_places.__len__()
-
+    print list(crawled_places)[0]
     cnt_skip = 0
     for place, [lat,lon], radius in places:
         if place in crawled_places:
@@ -196,7 +197,7 @@ def main():
                 break
             else:
                 parameters = [date_start_str, date_end_str, lon, lat, radius]
-                file_name = ddir+'%s_%s_%s.txt' % (place, date_start_str,date_end_str)
+                file_name = ddir+'/%s_%s_%s.txt' % (place, date_start_str,date_end_str)
                 file_name = file_name.replace(':','-')
                 print 'total < 3500, go to save flickr for every following pages',date_start_str, date_end_str
                 save_flickr(file_name,parameters,photo_list,flickr_apis)
