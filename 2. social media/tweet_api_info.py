@@ -164,10 +164,10 @@ def main():
     dir_tweet = tw_np_tweet_dir
     mkdir(dir_path)
     mkdir(dir_tweet)
-    js_file = dir_tweet + 'tweets.txt'
-    existid_file = dir_tweet+ 'existid.txt'
+    js_file = dir_tweet + '/tweets.txt'
+    existid_file = dir_tweet+ '/existid.txt'
 
-    tweets_list_files = glob.glob(dir_path+'*.*')
+    tweets_list_files = glob.glob(dir_path+'/*.*')
     print 'tweets_list files:', len(tweets_list_files)
 
     tweetids =  get_all_tweetids(tweets_list_files)
