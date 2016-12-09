@@ -3,15 +3,17 @@ tw_np_dir = '../data/social_media_raw/tw/np'
 tw_np_tweet_dir = tw_np_dir + '/tweets'
 tw_np_csv = '../data/place_polys_np_tw.csv'
 
-tw_museum_dir = '../data/social_media_raw/tw/museum'
-tw_museum_tweet_dir = u'd:\\★★学习工作\\Life in Maryland\\INFM750,CMSC828E Advanced Data Science\\project\\twitter\\museums'
+tw_museum_dir = '../data/social_media_raw/tw/m'
+# tw_museum_tweet_dir = u'd:\\★★学习工作\\Life in Maryland\\INFM750,CMSC828E Advanced Data Science\\project\\twitter\\museums'
+tw_museum_tweet_dir = tw_museum_dir + '/tweets'
 
 fl_np_geoj = '../data/place_polys_np.geojson'
 fl_np_dir = '../data/social_media_raw/flickr/np'
 fl_np_info_dir = fl_np_dir + '/info'
 
-fl_museum_info_dir = u'd:\\★★学习工作\\Life in Maryland\\INFM750,CMSC828E Advanced Data Science\\project\\flickr\\museum_radius\\collected'
-
+# fl_museum_info_dir = u'd:\\★★学习工作\\Life in Maryland\\INFM750,CMSC828E Advanced Data Science\\project\\flickr\\museum_radius\\collected'
+fl_museum_dir = '../data/social_media_raw/fl/m'
+fl_museum_info_dir = fl_museum_dir + '/info'
 
 def mkdir(ddir):
     import os
